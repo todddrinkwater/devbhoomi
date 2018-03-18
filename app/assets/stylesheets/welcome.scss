@@ -1,7 +1,21 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
+#background-image {
+    background-image:    asset-data-url('temple.jpg');
+    min-height: 100%;
+    background-size:     100% 100%;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+
+/* Navigation Bar Styling */
 
 ul {
     list-style-type: none;
@@ -19,7 +33,7 @@ ul {
   
 li {
     float: right;
-    padding: 5px 30px 5px 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 li a {
