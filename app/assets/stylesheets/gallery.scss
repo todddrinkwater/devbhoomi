@@ -1,0 +1,24 @@
+// Place all the styles related to the Gallery controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  border: 1px solid black;
+}
+
+.gallery-item-card {
+  height: 400px;
+  width: 300px;
+}
+
+.gallery-item-card span {
+  background-color: grey;
+  width: 100%
+}
+
+.gallery-item-image {
+  height: 200px;
+  width: 100%;
+  margin: auto;
+  background-color: blue;
+}

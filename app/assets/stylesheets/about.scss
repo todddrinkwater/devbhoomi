@@ -1,3 +1,24 @@
 // Place all the styles related to the About controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.about-container {
+  width: 70%;
+  margin: auto;
+}
+
+// * {
+//   border: 1px solid black;
+// }
+
+.paragraph-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 1em
+}
+
+.image-one {
+  background-image: asset-data-url('profile-blank.jpg');
+  height: 100%;
+  background-repeat: no-repeat;
+}
