@@ -10,7 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180320060938) do
+ActiveRecord::Schema.define(version: 20180321065810) do
+
+  create_table "administrators", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "street_name"
+    t.string "suburb"
+    t.string "city"
+    t.string "country"
+    t.string "postal_code"
+    t.string "mobile_number"
+    t.string "landline_number"
+    t.date "date_of_birth"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string "name"
+    t.time "time"
+    t.text "details"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "members", force: :cascade do |t|
     t.string "first_name"

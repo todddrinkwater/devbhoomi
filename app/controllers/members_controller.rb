@@ -17,7 +17,9 @@ class MembersController < ApplicationController
     @member = Member.find(params[:id])
   end
 
-def member_params
+  private
+
+  def member_params
     params.require(:members).permit(
       :first_name,
       :last_name,

@@ -1,0 +1,60 @@
+<%= render "welcome/nav_bar" %>
+
+<h1>Create New Administrator</h1>
+
+<%= form_with scope: :administrators, url: administrators_path, local: true do |form| %>
+  <p>
+    <%= form.label :first_name %><br>
+    <%= form.text_field :first_name %>
+  </p>
+
+  <p>
+    <%= form.label :last_name %><br>
+    <%= form.text_field :last_name %>
+  </p>
+
+  <p>
+    <%= form.label :street_address %><br>
+    <%= form.text_field :street_address %>
+  </p>
+
+  <p>
+    <%= form.label :suburb %><br>
+    <%= form.text_field :suburb %>
+  </p>
+
+  <p>
+    <%= form.label :city %><br>
+    <%= form.text_field :city %>
+  </p>
+
+  <p>
+    <%= form.label :country %><br>
+    <%= form.text_field :country %>
+  </p>
+
+  <p>
+    <%= form.label :postal_code %><br>
+    <%= form.text_field :postal_code %>
+  </p>
+
+  <p>
+    <%= form.label :mobile_number %><br>
+    <%= form.text_field :mobile_number %>
+  </p>
+
+  <p>
+    <%= form.label :landline_number %><br>
+    <%= form.text_field :landline_number %>
+  </p>
+
+  <p>
+    <%= form.label :email %><br>
+    <%= form.text_field :email %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
