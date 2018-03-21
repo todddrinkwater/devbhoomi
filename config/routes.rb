@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'members/new'
 
   post 'administrators/create'
+  get 'adminstrators/show_all_members'
 
   get 'galleries/index'
 
@@ -13,7 +14,6 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
   root 'welcome#index'
-  
 
   resources :members
   resources :administrators

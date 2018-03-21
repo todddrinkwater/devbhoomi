@@ -10,7 +10,7 @@ class AdministratorsController < ApplicationController
   end
 
   def index
-    @admins = Administrator.all
+    redirect_to members_path
   end
 
   def show
