@@ -1,0 +1,20 @@
+<%= render "welcome/nav_bar" %>
+
+<h1>Add new gallery</h1>
+
+<%= form_with scope: :galleries, url: galleries_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :details %><br>
+    <%= form.text_field :details %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+

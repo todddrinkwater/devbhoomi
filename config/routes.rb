@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   post 'administrators/create'
 
-  get 'gallery/index'
+  get 'galleries/index'
 
   get 'about/index'
 
@@ -18,5 +18,6 @@ Rails.application.routes.draw do
   resources :members
   resources :administrators
   resources :events
+  resources :galleries
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

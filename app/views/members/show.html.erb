@@ -1,3 +1,10 @@
 <%= render "welcome/nav_bar" %>
 
-<h1><%= @member.first_name%></h1>
+<h1><%= @member.first_name %> <%= @member.last_name %></h1>
+<p><%= @member.street_name %></p>
+<p><%= @member.suburb %></p>
+<p><%= @member.city %></p>
+<p><%= @member.country %></p>
+<p><%= @member.email %></p>
+<p><%= @member.landline_number %></p>
+<p><%= @member.mobile_number %></p>
