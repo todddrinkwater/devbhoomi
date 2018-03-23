@@ -1,12 +1,19 @@
 class EventsController < ApplicationController
+  include DateHelper
+
   def index
     @events = Event.all
   end
 
   def new
   end
-  
+
   def create
+    dates = {
+      time: format_date(params["time"])
+    }
+    params["events"].merge(dates)
+
     @event = Event.new(event_params)
 
     @event.save

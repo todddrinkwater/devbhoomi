@@ -1,2 +1,9 @@
-<h1><%= @gallery.name %></h1>
-<p><%= @gallery.details %></p>
+<%= render "welcome/nav_bar" %>
+
+<div class="general-container">
+  <div class="feature-image">
+    <%= image_tag @gallery.image.url(:medium) %>
+  </div>
+  <h1><%= @gallery.name %></h1>
+  <p><%= @gallery.details %></p>
+</div>

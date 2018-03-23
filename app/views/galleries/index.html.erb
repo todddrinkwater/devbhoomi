@@ -6,6 +6,7 @@
   <% @galleries.each do |gallery| %>
     <div class="gallery-item-card">
       <div class="gallery-item-image">
+        <%= image_tag gallery.image.url(:medium), class: "gallery-thumbnail" %>
       </div>
       <h6><%= gallery.created_at %></h6>
       <h1><%= gallery.name %></h1>

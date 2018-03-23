@@ -59,7 +59,23 @@
 
 .gallery-item-image {
   height: 200px;
+  max-height: 200px;
   width: 100%;
   margin: auto;
   background-color: blue;
+  overflow: hidden;
+}
+
+.gallery-thumbnail {
+  max-width: 100%;
+}
+
+.feature-image {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.feature-image img {
+  text-align: center;
 }

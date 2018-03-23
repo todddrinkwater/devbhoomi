@@ -1,6 +1,7 @@
 <%= render "welcome/nav_bar" %>
 
 <h1>Create New Event</h1>
+<%= link_to "Back to Calendar", events_path %>
 
 <%= form_with scope: :events, url: events_path, local: true do |form| %>
   <p>
@@ -10,7 +11,7 @@
 
   <p>
     <%= form.label :time %><br>
-    <%= form.date :time %>
+    <%= select_date Date.today, prefix: :time %>
   </p>
 
   <p>
