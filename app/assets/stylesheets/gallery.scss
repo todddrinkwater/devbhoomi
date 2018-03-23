@@ -62,7 +62,7 @@
   max-height: 200px;
   width: 100%;
   margin: auto;
-  background-color: blue;
+  background-color: #539ab5;
   overflow: hidden;
 }
 
@@ -78,4 +78,9 @@
 
 .feature-image img {
   text-align: center;
+}
+
+.gallery-item-footer a {
+  color: white;
+  text-decoration: none; /* no underline */
 }
